@@ -1,0 +1,42 @@
+{
+    "name": "litgroup/json-reader",
+    "description": "Library for schema-less reading of JSON.",
+    "keywords": ["JSON", "reader"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roman Shamritskiy",
+            "email": "roman@litgroup.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "LitGroup\\JsonReader\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\LitGroup\\JsonReader\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "~5.5|~7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.8@stable"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "archive": {
+        "exclude": [
+            "/tests",
+            "/phpunit.xml.dist",
+            "/.travis.yml",
+            ".gitignore"
+        ]
+    }
+}
