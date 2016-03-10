@@ -35,7 +35,7 @@ class JsonArray extends JsonStructure implements \Countable
      *
      * @return bool
      */
-    public function has($index)
+    public function hasIndex($index)
     {
         return intval($index) < $this->count();
     }
@@ -185,7 +185,7 @@ class JsonArray extends JsonStructure implements \Countable
      */
     private function get($index)
     {
-        if ($this->has($index)) {
+        if ($this->hasIndex($index)) {
             return $this->array[intval($index)];
         }
 

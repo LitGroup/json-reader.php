@@ -15,13 +15,13 @@ use LitGroup\JsonReader\JsonObject;
 
 class JsonArrayTest extends TestCase
 {
-    public function testHas()
+    public function testHasIndex()
     {
         $array = $this->readArray('["john", null]');
 
-        $this->assertTrue($array->has(0));
-        $this->assertTrue($array->has(1));
-        $this->assertFalse($array->has(2));
+        $this->assertTrue($array->hasIndex(0));
+        $this->assertTrue($array->hasIndex(1));
+        $this->assertFalse($array->hasIndex(2));
     }
 
     public function getCountTests()
